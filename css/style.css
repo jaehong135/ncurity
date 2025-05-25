@@ -175,9 +175,8 @@ body {background: #080B10; color: #fff;}
 
 .section_box .product ul > li.card3 img:nth-last-child(2){width: 46px; height: 46px;}
 
-
+.mo_slide {touch-action: pan-y;}
 .section3 { background: url(../images/bg2.gif)no-repeat center center; height: 100%; width: 100%;padding-bottom: 95px; padding-top: 200px;}
-
 .section3 .center_box ul {display: flex;flex-wrap: wrap; justify-content: space-between; gap: 25px;}
 .section3 .center_box ul li {border: 1px solid rgba(238, 238, 238, 0.5);
 width: 30%; height: 220px; flex-grow: 1;  display: flex; border-radius: 25px;background: rgba(77, 77, 77, 0.5);
