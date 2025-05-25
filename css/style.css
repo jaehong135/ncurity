@@ -408,6 +408,7 @@ grid-template-rows: repeat(3,230px);}
     .section5 .center_box ul li:nth-child(9) {grid-column: span 1;}
     .footer {padding: 40px 0 40px;}
     .footer .center_box {flex-wrap: wrap;}
+    .footer_logo > img {width: 80%}
 }
 @media screen and (max-width: 370px) {
     .footer .center_box > ul li a {margin-top: 6px;}
