@@ -59,7 +59,7 @@
                   moveX = 0;
                 });
 
-                $slideList.on('touchmove', function (e) {
+                $(document).on('touchmove', function (e) {
                   if (!isDragging) return;
                   const currentX = e.originalEvent.touches[0].clientX;
                   moveX = currentX - startX;
@@ -67,7 +67,8 @@
                   $slideList.css('transform', `translateX(${-baseOffset + moveX}px)`);
                 });
 
-                $slideList.on('touchend', function () {
+                $(document).on('touchend', function () {
+                  if (!isDragging) return;
                   isDragging = false;
                   const threshold = 50;
                   if (moveX > threshold && currentIndex > 0) {
